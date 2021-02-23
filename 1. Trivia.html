@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // load page
+            document.addEventListener('DOMContentLoaded', function() {
+
+            // define elements and set button tags to invisible
+
+                // Part 1:
+
+                let b1 = document.querySelector('button#answer_1');
+                let l1 = document.querySelector('p#label_1');
+                l1.style.visibility = 'hidden';
+
+                let b2 = document.querySelector('button#answer_2');
+                let l2 = document.querySelector('p#label_2');
+                l2.style.visibility = 'hidden';
+
+                let b3 = document.querySelector('button#answer_3');
+                let l3 = document.querySelector('p#label_3');
+                l3.style.visibility = 'hidden';
+
+                let b4 = document.querySelector('button#answer_4');
+                let l4 = document.querySelector('p#label_4');
+                l4.style.visibility = 'hidden';
+
+                let b5 = document.querySelector('button#answer_5');
+                let l5 = document.querySelector('p#label_5');
+                l5.style.visibility = 'hidden';
+
+                // Part 2:
+
+                let input = document.querySelector('input#free_response');
+                let check = document.querySelector('input#response_button');
+
+                // Part 3:
+
+                let fhappy = document.querySelector('button#happy');
+                let fok = document.querySelector('button#ok');
+                let fsad = document.querySelector('button#sad');
+
+            // Site responses
+
+                // Part 1: on button click - button colour change & button tag revealed
+
+                b1.addEventListener('click', function(event) {
+                    b1.style.backgroundColor = '#9E2A2B';
+                    l1.style.visibility = "visible";
+                });
+
+                b2.addEventListener('click', function(event) {
+                    b2.style.backgroundColor = '#9E2A2B';
+                    l2.style.visibility = "visible";
+                });
+
+                b3.addEventListener('click', function(event) {
+                    b3.style.backgroundColor = '#9E2A2B';
+                    l3.style.visibility = "visible";
+                });
+
+                b4.addEventListener('click', function(event) {
+                    b4.style.backgroundColor = '#9E2A2B';
+                    l4.style.visibility = "visible";
+                });
+
+                b5.addEventListener('click', function(event) {
+                    b5.style.backgroundColor = '#778A35';
+                    l5.style.visibility = "visible";
+                });
+
+                // Part 2: on button click - answer check & text box colour change
+
+                check.addEventListener('click', function(event) {
+
+                    if (input.value.includes('Switzerland') || input.value.includes('switzerland'))
+                    {
+                        input.style.backgroundColor = '#778A35';
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = '#9E2A2B';
+                    }
+
+                });
+
+                // Part 3: on button click - emoji change
+
+                fhappy.addEventListener('click', function(event) {
+                    fhappy.innerHTML = "&#127881";
+                });
+
+                fok.addEventListener('click', function(event) {
+                    fok.innerHTML = "&#129303";
+                });
+
+                fsad.addEventListener('click', function(event) {
+                    fsad.innerHTML = "&#128169";
+                });
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <!-- Part 1 -->
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+
+                <div class="buttons">
+
+                    <div class="button">
+                        <button id="answer_1">6 people per 1 sheep</button>
+                        <p id="label_1">Incorrect</p>
+                    </div>
+
+                    <div class="button">
+                        <button id="answer_2">3 people per 1 sheep</button>
+                        <p id="label_2">Incorrect</p>
+                    </div>
+
+                    <div class="button">
+                        <button id="answer_3">1 people per 1 sheep</button>
+                        <p id="label_3">Incorrect</p>
+                    </div>
+
+                    <div class="button">
+                        <button id="answer_4">1 people per 3 sheep</button>
+                        <p id="label_4">Incorrect</p>
+                    </div>
+
+                    <div class="button">
+                        <button id="answer_5">1 people per 6 sheep</button>
+                        <p id="label_5">Correct!</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Part 2 -->
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+
+                <form>
+                <input autocomplete="off" autofocus id="free_response" placeholder="Type your answer here..." type="text">
+                <input type="button" id="response_button" value = "Check Answer">
+                </form>
+
+            </div>
+
+            <!-- Part 3 -->
+
+            <div class="section">
+                <h2>Part 3: Feelings </h2>
+                <hr>
+                <h3>How are you doing?</h3>
+
+                <div class="feelings">
+
+                    <div class="button">
+                        <button id="happy">&#128512</button>
+                    </div>
+
+                    <div class="button">
+                        <button id="ok">&#128528</button>
+                    </div>
+
+                    <div class="button">
+                        <button id="sad">&#128530</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>
