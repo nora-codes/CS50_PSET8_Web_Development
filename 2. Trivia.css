@@ -1,0 +1,112 @@
+body {
+    background-color: #FFF3B0;
+    color: #1B3136;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom:15px;
+}
+
+.jumbotron {
+    background-color: #335C67;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section {
+    padding: 0.5rem 2rem 0rem 2rem;
+}
+
+.buttons {
+    display: grid;
+	grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.feelings {
+    display: grid;
+	grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+}
+
+.button {
+    text-align: center;
+}
+
+.section:hover {
+    background-color: #E09F3E;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+h2, h3, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button, input[type="submit"] {
+    background-color: #BBD7DD;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #1B3136;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+input[type="button"] {
+    background-color: #E18E8E;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #1B3136;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+input[type="text"] {
+    line-height: 1.8;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 25%;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.35rem;
+}
+
+input[type="text"]:hover {
+    background-color: #FFFCEB;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
