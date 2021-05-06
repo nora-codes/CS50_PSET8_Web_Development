@@ -1,0 +1,482 @@
+/* ------------------------------------------------------------------------------ */
+/* Setup & Universal Elements */
+/* ------------------------------------------------------------------------------ */
+
+* {
+    margin: 0px;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #FEF9D7;
+}
+
+.navbar-custom .nav-item:hover .nav-link {
+    color: #BC6C25;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+}
+.page {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-color: #E2B178;
+    overflow: hidden;
+    margin: 0%;
+}
+
+.text_box {
+    background-color: #FEF9D7;
+    position: absolute;
+    color: #293819;
+    width: 50%;
+    top: 120px;
+    right: 0%;
+    text-align: left;
+    padding: 30px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+a {
+    color: #FEF9D7;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #E2B178;
+    text-decoration-line: none;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Home */
+/* ------------------------------------------------------------------------------ */
+
+/* Section 1: Header */
+
+#header {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/clouds_page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #E2B178;
+    color: #2A381A;
+}
+
+.header_title {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    background-color: transparent;
+}
+
+h1.header_title {
+    margin: 0.5%;
+    font-size: 5vw;
+}
+
+h2.header_title {
+    margin: 0.5%;
+    font-size: 3vw;
+}
+
+h3.header_title {
+    margin: 0.5%;
+    font-size: 2vw;
+}
+
+/* Section 2: Introduction */
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#intro_image {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#insta_link {
+    margin: 10%;
+}
+
+#profile_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 50%;
+}
+
+#intro_text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#intro_title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#pointer_hand {
+    width: 30%;
+}
+
+#thats_me {
+    font-size: 3.5vw;
+    margin-left: 35px;
+    margin-top: 20px;
+    color: #293819;
+}
+
+#hello {
+    font-size: 16pt;
+    color: #293819;
+}
+
+/* Section 3: More */
+
+#row_more {
+    display: flex;
+    background-color: #606C38;
+    margin-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#know_more {
+    color: #E2B178;
+    padding: 30px;
+    font-size: 30pt;
+}
+
+.box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    margin: 5%;
+}
+
+.image {
+    width: 80%;
+    background-color: #606C38;
+}
+
+h2.tag {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+/* More -> Space */
+
+.overlay_space {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #606C38;
+}
+
+.box:hover .overlay_space {
+    background-image: url(images/rocket_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+/* More -> Automotive */
+
+.overlay_automotive {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #606C38;
+}
+
+.box:hover .overlay_automotive {
+    background-image: url(images/car_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+/* More -> Software */
+
+.overlay_software {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #606C38;
+}
+
+.box:hover .overlay_software {
+    background-image: url(images/code_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+/* More -> Business */
+
+.overlay_kitleys {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #606C38;
+}
+
+.box:hover .overlay_kitleys {
+    background-image: url(images/coffee_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+/* Section 4: Footer */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #343A40;
+    margin: 0px;
+    padding: 5px;
+}
+
+.contact {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.link {
+    width: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+h1.footer {
+    color: #BC6C25;
+    font-size: 25pt;
+}
+
+h2.footer {
+    color: #E2B178;
+    font-size: 20pt;
+}
+
+h3.footer {
+    font-size: 15pt;
+}
+
+a.footer {
+    color: #FEF9D7;
+}
+
+a.footer:hover {
+    color: #E2B178;
+}
+
+/* Home -> Responsivity */
+
+@media screen and (max-width: 768px) {
+    /* For tablets: */
+  .desktop_only {display: none;}
+  .intro_image {padding: 50px;}
+  .introduction {
+        font-size: 22px;
+        padding: 30px;
+    }
+    .intro_image {
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    h1.header_title {
+        margin: 0.5%;
+        font-size: 35pt;
+    }
+    h2.header_title {
+        margin: 0.5%;
+        font-size: 17pt;
+    }
+    h3.header_title {
+        margin: 0.5%;
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* For phones: */
+    .desktop_only {display: none;}
+    .tablet_text {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+    .intro_image {
+        display: block;
+        height: auto;
+        padding: 40px;
+        padding-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1.title {
+        margin: 0.5%;
+        font-size: 35pt;
+    }
+    h2.title {
+        margin: 0.5%;
+        font-size: 17pt;
+    }
+    h3.title {
+        margin: 0.5%;
+        font-size: 11pt;
+    }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* More Info Pages */
+/* ------------------------------------------------------------------------------ */
+
+h5.text {
+    font-size: 2vw;
+}
+
+h5.kitleys_text {
+    font-size: 1.8vw;
+}
+
+h2.text_title {
+    font-size: 3vw;
+}
+
+#space_page {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5d/STS115_Atlantis_undock_ISS_edit2.jpg);
+    background-position: right 250px top 0px;
+}
+
+#automotive_page {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/81/1959_Bentley_S_Continental_Flying_Spur_4_-_Bonhams_Paris_2015.jpg);
+    background-position: right 200px top -50px;
+}
+
+#software_page {
+    background-image: url(images/code.jpg);
+    background-position: right 0px top -50px;
+}
+
+#business_page {
+    background-image: url(images/kitleys.jpg);
+    background-position: left 250px top -100px;
+}
+
+#business_text_box {
+    top: 100px;
+    left: 0%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.btn-info {
+    margin-left: 195px;
+    margin-top: 10px;
+}
