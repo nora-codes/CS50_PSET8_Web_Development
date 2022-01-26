@@ -6,7 +6,7 @@ Trivia: A simple webpage that lets users answer trivia questions - including mul
 
 Homepage: A simple homepage using HTML, CSS, and JavaScript - including the following:
 - At least 4 different .html pages with hyperlinks to navigate between them 
-- At least 10 distinct HTML tags besides <html>, <head>, <body>, and <title>
+- At least 10 distinct HTML tags
 - At least 1 feature from bootstrap
 - At least 1 stylesheet of my own creation
 - At least 1 JavaScript feature of my own creation
